@@ -1,7 +1,9 @@
 # comp55Res
-## New Features or Changes
+## Adding character abilities
 <ol>
-  <li>add animations to the characters as well as other objects in game if necessary</li>
-  <li>each map should have some unique function to it</li>
-  <li>add unique abilities to existing characters to diversify gameplay</li>
+  <li>each character can correspond to a power up</li>
+  <li>fire dragon: higher bonues points</li>
+  <li>water dragon: better slow</li>
+  <li>air dragon: higher multiplier</li>
+  <li>earth dragon: longer invulnerability</li>
 </ol>
