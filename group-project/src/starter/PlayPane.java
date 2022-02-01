@@ -525,8 +525,14 @@ import acm.util.RandomGenerator;
 				//program.playSound("powerup.wav",false);
 			}
 			else if(pUpType == PowerUpType.SLOW) {
-				movementModifier = 0.8f;
+				if(playerType == PlayerType.WATER) {
+					movementModifier = 0.6f;
+				}
+				else {
+					movementModifier = 0.8f;
+				}
 				slowDownEndTime = totalGameTime + 4;
+				
 				//program.playSound("powerup.wav",false);
 			}
 			else {
