@@ -501,9 +501,17 @@ import acm.util.RandomGenerator;
 		private void determinePower(PowerUpType pUpType) {
 			if(pUpType == PowerUpType.MULTI) {
 				scoreDisplay.setFont(new Font("Serif", Font.BOLD, 20));
-				scoreDisplay.setColor(Color.RED);
 				times2 = 2;
-				times2EndTime = totalGameTime + 15;
+				int duration;
+				if(playerType == PlayerType.AIR) {
+					duration = 30;
+					scoreDisplay.setColor(Color.PINK);
+				}
+				else {
+					scoreDisplay.setColor(Color.RED);
+					duration = 15;
+				}
+				times2EndTime = totalGameTime + duration;
 				//program.playSound("powerup.wav",false);
 				
 			}
