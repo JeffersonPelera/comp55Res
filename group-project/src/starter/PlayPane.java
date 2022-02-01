@@ -536,9 +536,17 @@ import acm.util.RandomGenerator;
 				//program.playSound("powerup.wav",false);
 			}
 			else {
-				invulBar.setSize(350, BAR_HEIGHT);
+				int duration;
+				if(playerType == PlayerType.EARTH) {
+					invulBar.setSize(600, BAR_HEIGHT);
+					duration = 12;
+				}
+				else {
+					invulBar.setSize(350, BAR_HEIGHT);
+					duration = 7;
+				}
 				invulnerable = true;
-				invulnerableEndTime = totalGameTime + 7;
+				invulnerableEndTime = totalGameTime + duration;
 				
 				program.add(invulBar);
 				//program.playSound("powerup.wav",false);
