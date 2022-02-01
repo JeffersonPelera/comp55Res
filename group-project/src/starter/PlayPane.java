@@ -516,7 +516,12 @@ import acm.util.RandomGenerator;
 				
 			}
 			else if(pUpType == PowerUpType.BONUS) {
-				score += (100 * multiplier);
+				if(playerType == PlayerType.FIRE) {
+					score += (100 * multiplier * 2);
+				}
+				else {
+					score += (100 * multiplier);
+				}
 				//program.playSound("powerup.wav",false);
 			}
 			else if(pUpType == PowerUpType.SLOW) {
